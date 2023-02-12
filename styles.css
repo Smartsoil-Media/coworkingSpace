@@ -213,6 +213,10 @@ button:hover {
 @media only screen and (max-width: 676px) {
     .posts-container {
         max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* border: solid white 1px; */
     }
 }
 
