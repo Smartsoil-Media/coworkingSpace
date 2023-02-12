@@ -14,14 +14,23 @@ h1 {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+        padding: 10px 10px;
+        margin: 10px 0px;
+    }
+}
+
 button {
     border: none;
     background: #10B981;
     padding: 10px 15px;
     color: whitesmoke;
     font-weight: bold;
+    margin-top: auto;
     margin-bottom: auto;
-    margin-left: auto;
+    margin-right: auto;
     width: 75 px;
     border-radius: 7px;
     cursor: pointer;
@@ -29,16 +38,17 @@ button {
     transition: 00.3s;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 767px) {
     button {
-        margin-right: auto;
+        margin-right: 0;
+        margin-left: 0;
+    
+        margin-bottom: 10px;
+        margin-top: -25px;
 
     }
 }
 
-p {
-    margin-bottom: 0;
-}
 
 button:hover {
     background-color: #5dd7af;
@@ -73,12 +83,12 @@ button:hover {
 
 .item {
     position: relative;
+    height: auto;
     display: flex;
    flex-direction: column;
    justify-content: center;
    background-color: #282828;
-   max-width: 30%;
-   width: 30%;
+   max-width: 32%;
    margin: 0 auto;
    color: whitesmoke;
 }
@@ -100,14 +110,25 @@ button:hover {
 
 .caption {
     margin: 10px 0;
-    padding: 0 25px;
+    padding: 0 15px;
     display: flex;
-    width: 80%;
+    width: 90%;
+    height: 100px;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
     position: relative;
-    flex-wrap: wrap;
 }
+
+
+
+@media only screen and (max-width: 1250px){
+    .caption {
+        flex-wrap: wrap;
+        height: 150px;
+
+    }
+} 
 
 .container-break {
     height: 30px;
@@ -138,6 +159,7 @@ button:hover {
 
 .item-img{
     max-width: 100%;
+
     
 }
 
@@ -178,20 +200,27 @@ button:hover {
 .posts-container {
     display: flex;
     justify-content: center;
+    border-radius: 10px;
     flex-wrap: wrap;
+    gap: 5px;
     max-width: 80%;
     margin: 25px auto;
 
     
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 676px) {
     .posts-container {
         max-width: 100%;
     }
 }
 
+/* @media only screen and (min-width: 676px) {
+    .caption-text {
+        max-width: 80%;
 
-
+    }
+}
+ */
 
 
 
