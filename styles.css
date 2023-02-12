@@ -17,7 +17,7 @@ h1 {
 @media only screen and (max-width: 767px) {
     h1 {
         font-size: 28px;
-        padding: 10px 10px;
+        padding: 10px 25px;
         margin: 10px 0px;
     }
 }
@@ -89,7 +89,7 @@ button:hover {
    justify-content: center;
    background-color: #282828;
    max-width: 32%;
-   margin: 0 auto;
+   margin: 0 auto 10px auto;
    color: whitesmoke;
 }
 
@@ -126,6 +126,8 @@ button:hover {
     .caption {
         flex-wrap: wrap;
         height: 150px;
+        padding: 0 25px;
+        gap: 0s;
 
     }
 } 
@@ -214,19 +216,8 @@ button:hover {
     }
 }
 
-/* @media only screen and (min-width: 676px) {
-    .caption-text {
-        max-width: 80%;
-
-    }
+footer {
+    margin-top: 25px;
+    color: white;
+    font-family: monospace;
 }
- */
-
-
-
-
-/*
-Challenge:
-1. Get this layout looking like the 
-   screenshots on the slide.
-*/  
